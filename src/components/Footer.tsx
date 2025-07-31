@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span>Lagos, Nigeria</span>
+                <span>Kenya</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-foreground/60 text-sm mb-4 md:mb-0">
-            © 2024 AfriFuta. All rights reserved.
+            © 2025 AfriFuta. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-primary-foreground/60">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
