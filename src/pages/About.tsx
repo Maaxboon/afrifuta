@@ -197,8 +197,26 @@ const About = () => {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* Problem Statement Section */}
       <section className="py-20 bg-gradient-card">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              The <span className="text-primary">Challenge</span>
+            </h2>
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p>
+                Africa has incredible football talent, but players struggle to access professional opportunities 
+                due to poor visibility, lack of centralized platforms, limited access to scouts and tryouts, 
+                disorganized communication, and missing records of player activity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
