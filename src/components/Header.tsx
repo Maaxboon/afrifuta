@@ -7,14 +7,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">AF</span>
           </div>
           <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
             AfriFuta
           </span>
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
