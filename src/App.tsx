@@ -8,6 +8,10 @@ import SignIn from "./pages/SignIn";
 import Join from "./pages/Join";
 import PlayerDashboard from "./pages/PlayerDashboard";
 import ScoutDashboard from "./pages/ScoutDashboard";
+import FindPlayers from "./pages/FindPlayers";
+import Opportunities from "./pages/Opportunities";
+import ForScouts from "./pages/ForScouts";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +28,10 @@ const App = () => (
           <Route path="/join" element={<Join />} />
           <Route path="/player-dashboard" element={<PlayerDashboard />} />
           <Route path="/scout-dashboard" element={<ScoutDashboard />} />
+          <Route path="/find-players" element={<FindPlayers />} />
+          <Route path="/opportunities" element={<Opportunities />} />
+          <Route path="/for-scouts" element={<ForScouts />} />
+          <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -18,18 +18,18 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          <Link to="/find-players" className="text-foreground hover:text-primary transition-colors">
             Find Players
-          </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          </Link>
+          <Link to="/opportunities" className="text-foreground hover:text-primary transition-colors">
             Opportunities
-          </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          </Link>
+          <Link to="/for-scouts" className="text-foreground hover:text-primary transition-colors">
             For Scouts
-          </a>
-          <a href="#" className="text-foreground hover:text-primary transition-colors">
+          </Link>
+          <Link to="/about" className="text-foreground hover:text-primary transition-colors">
             About
-          </a>
+          </Link>
         </nav>
 
         {/* Right side actions */}
