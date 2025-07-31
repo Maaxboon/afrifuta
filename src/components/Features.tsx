@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   User, 
   Search, 
@@ -88,9 +89,11 @@ const Features = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-              Create Player Profile
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" className="bg-gradient-hero hover:shadow-glow transition-all duration-300" asChild>
+              <Link to="/player-dashboard">
+                Create Player Profile
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -123,9 +126,11 @@ const Features = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" variant="outline" className="border-2 border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300">
-              Join as Scout/Club
-              <ArrowRight className="w-5 h-5 ml-2" />
+            <Button size="lg" variant="outline" className="border-2 border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300" asChild>
+              <Link to="/scout-dashboard">
+                Join as Scout/Club
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </Button>
           </div>
         </div>

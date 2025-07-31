@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play, Users, Trophy, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-football.jpg";
 
 const Hero = () => {
@@ -43,9 +44,12 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-hero hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+              asChild
             >
-              Start Your Journey
-              <ArrowRight className="w-5 h-5 ml-2" />
+              <Link to="/join">
+                Start Your Journey
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
             </Button>
             
             <Button 

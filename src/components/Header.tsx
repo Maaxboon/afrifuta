@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Search, User } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -38,9 +39,11 @@ const Header = () => {
           </Button>
           
           <div className="hidden md:flex items-center space-x-2">
-            <Button variant="outline">Sign In</Button>
-            <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300">
-              Join AfriFuta
+            <Button variant="outline" asChild>
+              <Link to="/signin">Sign In</Link>
+            </Button>
+            <Button className="bg-gradient-hero hover:shadow-glow transition-all duration-300" asChild>
+              <Link to="/join">Join AfriFuta</Link>
             </Button>
           </div>
 
